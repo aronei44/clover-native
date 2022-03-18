@@ -1,14 +1,24 @@
 /* eslint-disable prettier/prettier */
 import React from 'react';
 import { StyleSheet, View, Image } from 'react-native';
+import { Link } from 'react-router-native';
 
 
 const Footer = () => {
     return (
         <View style={styles.footer}>
-            <Image source={require('../image/product.png')} style={styles.footerLogo} />
-            <Image source={require('../image/cart.png')} style={styles.footerLogo} />
-            <Image source={require('../image/person.png')} style={styles.footerLogo} />
+            <Link to={'/'}>
+                <Image source={require('../image/product.png')} style={styles.footerLogo} />
+            </Link>
+            <Link to={'/cart'}>
+                <Image source={require('../image/cart.png')} style={styles.footerLogo} />
+            </Link>
+            <Link to={'/shipper'}>
+                <Image source={require('../image/shipper.png')} style={styles.footerLogo} />
+            </Link>
+            <Link to={'/user'}>
+                <Image source={require('../image/person.png')} style={styles.footerLogo} />
+            </Link>
         </View>
     );
 };
