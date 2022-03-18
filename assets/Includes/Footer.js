@@ -1,7 +1,6 @@
 /* eslint-disable prettier/prettier */
-import React from "react";
-import { StyleSheet, View, Text, Image } from 'react-native';
-import { Link } from 'react-router-native';
+import React from 'react';
+import { StyleSheet, View, Image } from 'react-native';
 
 
 const Footer = () => {
@@ -11,8 +10,8 @@ const Footer = () => {
             <Image source={require('../image/cart.png')} style={styles.footerLogo} />
             <Image source={require('../image/person.png')} style={styles.footerLogo} />
         </View>
-    )
-}
+    );
+};
 
 const styles = StyleSheet.create({
     footer: {

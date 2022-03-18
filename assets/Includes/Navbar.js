@@ -1,6 +1,6 @@
 /* eslint-disable prettier/prettier */
-import React, { useState } from "react";
-import { StyleSheet, View, Image, Text, Button } from 'react-native';
+import React from 'react';
+import { StyleSheet, View, Image } from 'react-native';
 import { Link } from 'react-router-native';
 
 
@@ -11,8 +11,8 @@ const Navbar = () => {
                 <Image source={require('../image/logo.png')} style={styles.navLogo} />
             </Link>
         </View>
-    )
-}
+    );
+};
 
 const styles = StyleSheet.create({
     nav: {
