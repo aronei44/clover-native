@@ -1,34 +1,31 @@
+/* eslint-disable prettier/prettier */
 /* eslint-disable react/self-closing-comp */
 /* eslint-disable prettier/prettier */
 
-import React from "react";
-import { StyleSheet, Text, View } from 'react-native';
+import React from 'react';
+import { StyleSheet, View } from 'react-native';
+import Card from '../Includes/Card';
+
+
 const Home = () => {
     return (
         <View style={styles.container}>
-            <Text>Home</Text>
+            <Card />
+            <Card />
+            <Card />
+            <Card />
         </View>
     );
 };
 
 const styles = StyleSheet.create({
-    sectionContainer: {
-        marginTop: 32,
-        paddingHorizontal: 24,
+    container: {
+        padding: 20,
+        display: 'flex',
+        flexDirection: 'row',
+        flexWrap: 'wrap',
+        paddingBottom: 100,
     },
-    sectionTitle: {
-        fontSize: 24,
-        fontWeight: '600',
-    },
-    sectionDescription: {
-        marginTop: 8,
-        fontSize: 18,
-        fontWeight: '400',
-    },
-    highlight: {
-        fontWeight: '700',
-    },
-
 });
 
 export default Home;
